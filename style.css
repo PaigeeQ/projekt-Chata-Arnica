@@ -152,10 +152,10 @@ span {
 .review {
   padding: 3.5rem 1.5rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--background-primary);
+  position: relative;
 }
 
 .review__title {
@@ -175,11 +175,24 @@ span {
   font-style: oblique;
   background-color: var(--background-secondary);
   border: none;
+  width: 250px;
+  position: relative;
+  left: 60px;
 }
 
 .review__author {
   text-align: end;
   font-style: normal;
+}
+
+.review__photo {
+  background-image: url('./images/reviewer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;  
 }
 
 /* PATIČKA - KONTAKT */
