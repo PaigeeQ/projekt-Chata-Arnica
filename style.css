@@ -19,6 +19,7 @@ body,
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -80,7 +81,7 @@ span {
   padding: 2.5rem 1.5rem;
   font-size: 2.5rem;
   background-color: var(--background-secondary);
-  font-family: 'Ĺora' serif;
+  font-family: 'Lora', serif;
   text-align: center;
 }
 
@@ -315,4 +316,17 @@ span {
 
 .offer {
   width: 220px;
+}
+
+
+@media (min-width: 1200px) {
+/* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 1200PX */
+  .pricelist__content {
+    gap: 6rem;
+  }
+
+  .footer {
+    gap: 6rem;
+  }
+
 }
