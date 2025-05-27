@@ -172,8 +172,9 @@ span {
 .review__text {
   padding: 2rem;
   font-size: 1.3rem;
-  font-style: 'oblique';
-  border: 2px solid var(--background-secondary)
+  font-style: oblique;
+  background-color: var(--background-secondary);
+  border: none;
 }
 
 .review__author {
@@ -286,6 +287,7 @@ span {
   .review__text {
     width: 250px;
     padding: 1.5rem;
+    font-size: 1.3rem;
   }
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
