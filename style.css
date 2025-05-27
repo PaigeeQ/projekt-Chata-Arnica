@@ -290,3 +290,14 @@ span {
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
 }
+.pricelist__content {
+  flex-direction: row;        
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;                  
+  flex-wrap: wrap;            
+}
+
+.offer {
+  width: 220px;
+}
