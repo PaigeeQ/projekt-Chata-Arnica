@@ -27,6 +27,7 @@ nav {
   display: flex;
   align-items: baseline;
   color: var(--text);
+  gap: 1rem;
 }
 
 ul {
@@ -46,6 +47,14 @@ span {
 .page-header {
   padding: 1.5rem;
   padding-bottom: 0;
+  background-color: var(--background-secondary);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  text-align: center;
 }
 
 .logo {
@@ -112,6 +121,8 @@ span {
 
 .offer {
   margin: 1rem 0 2rem 0;
+  width: 80%;
+  max-width: 270px;
 }
 
 .offer__header {
@@ -161,6 +172,8 @@ span {
 .review__text {
   padding: 2rem;
   font-size: 1.3rem;
+  font-style: 'oblique';
+  border: 2px solid var(--background-secondary)
 }
 
 .review__author {
@@ -215,7 +228,8 @@ span {
 }
 
 .subheading__content {
-  max-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -225,6 +239,7 @@ span {
   background-position: center;
   height: 70vh; 
   width: 100%;
+  background-repeat: no-repeat; 
 }
 
 @media (min-width: 840px) {
@@ -233,10 +248,12 @@ span {
     padding: 2rem 4rem;
     padding-bottom: 0;
     background-color: var(--background-secondary);
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    flex-direction: row;
     text-align: center;
   }
 
