@@ -15,6 +15,8 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: var(--text);
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 html {
@@ -24,6 +26,7 @@ html {
 nav {
   display: flex;
   align-items: baseline;
+  color: var(--text);
 }
 
 ul {
@@ -52,6 +55,14 @@ span {
 .navlink {
   text-decoration: none;
   margin-right: 0.5rem;
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.navlink:hover {
+  background-color: var(--background-primary);
 }
 
 /* HLAVNÍ NADPIS */
@@ -59,6 +70,9 @@ span {
 .pitch {
   padding: 2.5rem 1.5rem;
   font-size: 2.5rem;
+  background-color: var(--background-secondary);
+  font-family: 'Ĺora' serif;
+  text-align: center;
 }
 
 /* ÚVODNÍ TEXT  */
@@ -79,6 +93,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background-secondary);
 }
 
 .pricelist__title {
@@ -156,7 +171,7 @@ span {
 .footer {
   padding: 2.5rem 1.5rem;
   font-size: 1.2rem;
-
+  background-color: var(--background-secondary);
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -185,15 +200,40 @@ span {
 
 /* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
 
+.logo {
+  font-family: 'Dawning of a New Day', cursive;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.navlink {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.subheading__content {
+  max-width: 600px;
+  text-align: center;
+}
+
 @media (min-width: 840px) {
   /* HLAVIČKA - NAVIGACE */
   .page-header {
     padding: 2rem 4rem;
     padding-bottom: 0;
+    background-color: var(--background-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
   }
 
   .logo {
     font-size: 2.25rem;
+    font-family: 'Dawning of a New Day', cursive;
+    color: var(--text);
   }
 
   .navlink {
@@ -204,6 +244,7 @@ span {
 
   .pitch {
     font-size: 3rem;
+    background-color: var(--background-secondary);
   }
 
   /* ÚVODNÍ TEXT */
